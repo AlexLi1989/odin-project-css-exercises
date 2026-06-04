@@ -89,3 +89,65 @@
   font-size: 13px;
   font-weight: normal;
 }
+/* answer */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* grid-template-rows: minmax(40px, 2fr) minmax(16px, 1fr) 10fr max(16px, 1fr); */
+  gap: 4px;
+  min-height: 100vh;
+}
+/* header css */
+.header{
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.menu{
+  align-self: center;
+  justify-self: end;
+}
+.menu ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+/* sidebar css */
+.sidebar{
+  grid-column: 1/ span 1;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+}
+.photo, .side-content{
+  display: grid;
+  place-items: center;
+}
+/* nav css */
+.nav{
+  grid-column: 2/ span 1;
+  grid-row: 2/span 1;
+}
+.nav ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+/* article css */
+.article{
+  grid-column: 2/span 1;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.card{
+  height: 200px;
+}
+/* footer css */
+.footer{
+  grid-column: 1/ span 2;
+  grid-row: 4/5;
+  margin-bottom: 4px;
+}
