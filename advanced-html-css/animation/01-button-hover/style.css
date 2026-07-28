@@ -17,3 +17,13 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+
+/* answers */
+button:hover{
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+button{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
